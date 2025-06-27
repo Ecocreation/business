@@ -1224,10 +1224,10 @@ body {
         width: calc(50% - 10px);
     }
 }
-
+*/
 /* Tablet (768px to 991px) */
 @media (max-width: 991px) and (min-width: 768px) {
-    .header-container {
+       .header-container {
         padding: 0 20px;
     }
 
@@ -1242,6 +1242,14 @@ body {
 
     .mobile-menu-toggle {
         display: flex;
+    }
+
+    .hero-section {
+        height: 100vh;
+        background: url("assests/img4.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .hero-section,
@@ -1272,22 +1280,40 @@ body {
         height: 120px;
     }
 
+    .career-goals-section {
+        height: 100vh;
+        padding: 0 40px;
+    }
+
+    .circle-green,
+    .circle-blue,
+    .circle-pink {
+        display: none;
+    }
+
     .dynamic-music-label {
         right: 110px;
         bottom: 40px;
     }
 
-    .yoga-content {
-        flex-direction: column;
-        gap: 40px;
+    .yoga-section {
+        align-items: baseline;
+        min-height: 145vh;
+
     }
 
-    .image-container {
-        order: -1;
+    .yoga-content {
+        flex-direction: column;
+        gap: 50px;
+
     }
 
     .yoga-image {
-        height: 400px;
+        margin-top: 250px;
+        width: 90%;
+        height: 300px;
+        position: absolute;
+        overflow: visible;
     }
 
     .goal-content-wrapper {
@@ -1303,6 +1329,22 @@ body {
         margin-top: 0;
     }
 
+    .money-move-section{
+        padding-top: 90px;
+        height: 120vh;
+    }
+    .circular-logo {
+    top: 90px;
+    right: 100px;
+    justify-content: baseline;
+    
+}
+    .money-visual {
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100px;
+    bottom: 100px;
+}
     .money-content-wrapper {
         flex-direction: column;
         gap: 40px;
@@ -1333,21 +1375,28 @@ body {
         flex-direction: column;
         gap: 40px;
     }
-
+    .footer-section{
+        width: 100%;
+    }
     .footer-links {
-        gap: 40px;
+        gap: 80px;
+    }
+
+    .container {
+        padding: 50px 20px;
     }
 
     .content-wrapper {
         grid-template-columns: 1fr;
         gap: 40px;
+
     }
 
     .product-images img {
         width: calc(50% - 10px);
     }
 }
-*/
+
 /* Large Mobile (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
        .header-container {
