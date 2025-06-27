@@ -1182,7 +1182,7 @@ body {
         gap: 60px;
     }
 }
-
+/* 
 /* Large Tablet/Small Desktop (992px to 1199px) */
 @media (max-width: 1199px) and (min-width: 992px) {
     .header-container {
@@ -1347,7 +1347,7 @@ body {
         width: calc(50% - 10px);
     }
 }
-
+*/
 /* Large Mobile (576px to 767px) */
 @media (max-width: 767px) and (min-width: 576px) {
        .header-container {
