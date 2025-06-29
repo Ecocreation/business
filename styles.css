@@ -6,6 +6,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+html, body {
+    overflow-x: hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
 
 body {
     font-family: -apple-system, poppins, sans-serif;
@@ -17,6 +29,7 @@ body {
 /* Header Section - Fixed */
 .header-container {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 0px 40px;
@@ -56,7 +69,6 @@ body {
     color: #333;
     font-weight: 500;
 }
-
 
 .mobile-menu-toggle {
     display: none;
@@ -157,10 +169,6 @@ body {
     font-size: 2rem;
 }
 
-
-
-
-
 .qr-code-container {
     position: absolute;
     right: 40px;
@@ -176,7 +184,7 @@ body {
 .qr-code-pattern {
     width: 150px;
     height: 150px;
-    background: url('assests/qr-code.png')center/contain;
+    background: url('assests/qr-code.webp')center/contain;
 }
 
 .dynamic-music-label {
@@ -191,7 +199,7 @@ body {
 /* Career Goals Section */
 .career-goals-section {
     background: #f8fafc;
-    padding: 0 40px;
+    padding: 100px 0px;
 }
 
 .career-goals-content {
@@ -200,7 +208,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     width: 100%;
 }
 
@@ -262,11 +270,14 @@ body {
 
 /* Open Your Eyes Section */
 .yoga-section {
-    background: #eeffea;
-    padding: 80px 40px;
-    min-height: 100vh;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 .yoga-content {
@@ -353,7 +364,7 @@ body {
     width: 100%;
     max-width: 700px;
     height: 600px;
-    background: url('assests/Sustainable.jpg') center/cover;
+    background: url('assests/Sustainable.webp') center/cover;
     border-radius: 24px;
     position: relative;
     overflow: hidden;
@@ -402,7 +413,6 @@ body {
     background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 20'%3E%3Cpath d='M2 10h4l2-6 2 12 2-8 2 4 2-10 2 16 2-12 2 8 2-4 2 6 2-2 2 4 2-8 2 12 2-6 2 2 2-4 2 8 2-12 2 6 2-2 2 4 2-8 2 12 2-6 2 2' stroke='%23059669' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/contain no-repeat;
 }
 
-
 /* The Goal Section */
 .goal-section {
     background: #f8fafc;
@@ -425,14 +435,11 @@ body {
 
 .goal-content.one {
     margin-bottom: 300px;
-
 }
 
 .goal-content.two {
     margin-top: 200px;
 }
-
-
 
 .goal-title {
     font-size: clamp(40px, 8vw, 64px);
@@ -462,7 +469,6 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-
     position: relative;
 }
 
@@ -474,7 +480,6 @@ body {
     width: 100%;
     height: 20px;
     background: #ef4444;
-
 }
 
 .cross-mark::after {
@@ -500,7 +505,7 @@ body {
 /* Video Courses Section */
 .video-courses-section {
     background: #eeffea;
-    padding: 150px 40px;
+    padding: 100px 40px;
     height: auto;
 }
 
@@ -561,7 +566,6 @@ body {
 }
 
 /*money*/
-
 .money-move-section {
     min-height: auto;
     padding: 50px 40px;
@@ -741,7 +745,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-
 }
 
 .cardholder-details {
@@ -802,8 +805,6 @@ body {
     bottom: 80px;
     left: 40px;
 }
-
-
 
 /* Testimonials Section */
 .testimonials-section {
@@ -876,7 +877,6 @@ body {
 }
 
 /* Footer Section */
-
 .footer-section.full-height-section {
     height: auto;
     display: flex;
@@ -957,8 +957,6 @@ body {
     font-size: 14px;
 }
 
-
-
 .container {
     max-width: 1600px;
     margin: 0 auto;
@@ -985,7 +983,7 @@ body {
     border-radius: 24px;
     overflow: hidden;
     height: 500px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assests/bacground_img2.jpg');
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url('assests/bacground_img2.webp');
     background-size: cover;
     background-position: center;
     display: flex;
@@ -1095,10 +1093,7 @@ body {
     transform: rotate(45deg);
 }
 
-
-
 /*message button*/
-
 .whatsapp-button {
     position: fixed;
     left: 0;
@@ -1110,19 +1105,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     margin: 10px;
-
     /* Animation */
     animation: bounce 3.5s infinite;
 }
 
 /* Bounce Keyframes */
 @keyframes bounce {
-
     0%,
     100% {
         transform: translateY(0);
     }
-
     50% {
         transform: translateY(-15px);
     }
@@ -1130,872 +1122,521 @@ body {
 
 .whatsapp-button:hover {
     cursor: pointer;
-
 }
-
-/* ===== RESPONSIVE MEDIA QUERIES ===== */
-
-/* Large Desktop (1400px and up) */
-@media (min-width: 1400px) {
-    .header-container {
-        padding: 0 60px;
-    }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 60px;
-        padding-right: 60px;
-    }
-
-    .hero-title {
-        font-size: 140px;
-    }
-
-    .qr-code-container {
-        right: 60px;
-        width: 180px;
-        height: 180px;
-    }
-
-    .qr-code-pattern {
-        width: 180px;
-        height: 180px;
-    }
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-size: 24px;
+    padding: 10px 15px;
+    background: #02532b;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
 }
+/* Mobile First Responsive Design */
 
-/* Desktop (1200px to 1399px) */
-@media (max-width: 1399px) and (min-width: 1200px) {
-    .yoga-content {
-        gap: 60px;
-    }
-
-    .goal-content-wrapper {
-        gap: 60px;
-    }
-
-    .money-content-wrapper {
-        gap: 60px;
-    }
-}
-
-/* Large Tablet/Small Desktop (992px to 1199px) */
-@media (max-width: 1199px) and (min-width: 992px) {
-    .header-container {
-        padding: 0 30px;
-    }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 30px;
-        padding-right: 30px;
-    }
-
-    .yoga-content {
-        gap: 40px;
-    }
-
-    .goal-content-wrapper {
-        gap: 40px;
-    }
-
-    .money-content-wrapper {
-        gap: 40px;
-    }
-
-    .testimonials-grid {
-        gap: 30px;
-    }
-
-    .footer-links {
-        gap: 60px;
-    }
-
-    .product-images img {
-        width: calc(50% - 10px);
-    }
-}
-
-/* Tablet (768px to 991px) */
-@media (max-width: 991px) and (min-width: 768px) {
- .header-container {
-        padding: 0 20px;
-    }
-
-    .full-height-section {
-        height: auto;
-        padding: 50px 50px;
-    }
-
-    .navigation-menu {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: flex;
-    }
-
-    .hero-section {
-        height: 100vh;
-        background: url("assests/img4.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hero-cta-section {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .qr-code-container {
-        right: 20px;
-        bottom: 20px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .qr-code-pattern {
-        width: 120px;
-        height: 120px;
-    }
-
-    .career-goals-section {
-        height: 100vh;
-        padding: 0 40px;
-    }
-
-    .circle-green,
-    .circle-blue,
-    .circle-pink {
-        display: none;
-    }
-
-    .dynamic-music-label {
-        right: 110px;
-        bottom: 40px;
-    }
-
-    .yoga-section {
-        align-items: baseline;
-        min-height: 145vh;
-
-    }
-
-    .yoga-content {
-        flex-direction: column;
-        gap: 50px;
-
-    }
-
-    .yoga-image {
-        margin-top: 250px;
-        width: 90%;
-        height: 300px;
-        position: absolute;
-        overflow: visible;
-    }
-
-    .goal-content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .goal-content.one {
-        margin-bottom: 0;
-    }
-
-    .goal-content.two {
-        margin-top: 0;
-    }
-
-    .money-move-section{
-        padding-top: 90px;
-        height: 120vh;
-    }
-    .circular-logo {
-    top: 90px;
-    right: 100px;
-    justify-content: baseline;
-    
-}
-    .money-visual {
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100px;
-    bottom: 100px;
-}
-    .money-content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .stats-container {
-        gap: 20px;
-    }
-
-    .credit-card {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 20px auto 0;
-    }
-
-    .testimonials-grid {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .testimonials-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .footer-section{
-        width: 100%;
-    }
-    .footer-links {
-        gap: 80px;
-    }
-
-    .container {
-        padding: 50px 20px;
-    }
-
-    .content-wrapper {
-        grid-template-columns: 1fr;
-        gap: 40px;
-
-    }
-
-    .product-images img {
-        width: calc(50% - 10px);
-    }
-
-}
-
-/* Large Mobile (576px to 767px) */
-@media (max-width: 767px) and (min-width: 576px) {
- .header-container {
-        padding: 0 20px;
-    }
-
-    .full-height-section {
-        height: auto;
-        padding: 50px 50px;
-    }
-
-    .navigation-menu {
-        display: none;
-    }
-
-    .mobile-menu-toggle {
-        display: flex;
-    }
-
-    .hero-section {
-        height: 100vh;
-        background: url("assests/img4.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-    }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .hero-cta-section {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    .qr-code-container {
-        right: 20px;
-        bottom: 20px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .qr-code-pattern {
-        width: 120px;
-        height: 120px;
-    }
-
-    .career-goals-section {
-        height: 100vh;
-        padding: 0 40px;
-    }
-
-    .circle-green,
-    .circle-blue,
-    .circle-pink {
-        display: none;
-    }
-
-    .dynamic-music-label {
-        right: 110px;
-        bottom: 40px;
-    }
-
-    .yoga-section {
-        align-items: baseline;
-        min-height: 145vh;
-
-    }
-
-    .yoga-content {
-        flex-direction: column;
-        gap: 50px;
-
-    }
-
-    .yoga-image {
-        margin-top: 250px;
-        width: 90%;
-        height: 300px;
-        position: absolute;
-        overflow: visible;
-    }
-
-    .goal-content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .goal-content.one {
-        margin-bottom: 0;
-    }
-
-    .goal-content.two {
-        margin-top: 0;
-    }
-
-    .money-move-section{
-        padding-top: 90px;
-        height: 120vh;
-    }
-    .circular-logo {
-    top: 90px;
-    right: 100px;
-    justify-content: baseline;
-    
-}
-    .money-visual {
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100px;
-    bottom: 100px;
-}
-    .money-content-wrapper {
-        flex-direction: column;
-        gap: 40px;
-    }
-
-    .stats-container {
-        gap: 20px;
-    }
-
-    .credit-card {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin: 20px auto 0;
-    }
-
-    .testimonials-grid {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .testimonials-header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        gap: 40px;
-    }
-    .footer-section{
-        width: 100%;
-    }
-    .footer-links {
-        gap: 80px;
-    }
-
-    .container {
-        padding: 50px 20px;
-    }
-
-    .content-wrapper {
-        grid-template-columns: 1fr;
-        gap: 40px;
-
-    }
-
-    .product-images img {
-        width: calc(50% - 10px);
-    }
-
-}
-
-/* Small Mobile (up to 575px) */
+/* Small Mobile Devices (320px - 480px) */
 @media (max-width: 480px) {
     .header-container {
-        padding: 0 20px;
+        padding: 0px 20px;
+        flex-wrap: wrap;
     }
-
-    .full-height-section {
-        height: auto;
-        padding: 50px 50px;
+    
+    .logo-icon img {
+        width: 120px;
+        height: 60px;
     }
-
+    
     .navigation-menu {
         display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: #ffffffee;
+        flex-direction: column;
+        padding: 20px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
-
+    
+    .navigation-menu.active {
+        display: flex;
+    }
+    
     .mobile-menu-toggle {
         display: flex;
     }
-
+    
     .hero-section {
-        height: 100vh;
-        background: url("assests/img4.png");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        padding: 0 20px;
+        
     }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
+    
     .hero-cta-section {
         flex-direction: column;
         gap: 15px;
     }
-
+    
     .qr-code-container {
-        right: 20px;
-        bottom: 20px;
-        width: 120px;
-        height: 120px;
-    }
-
-    .qr-code-pattern {
-        width: 120px;
-        height: 120px;
-    }
-
-    .career-goals-section {
-        height: 100vh;
-        padding: 0 40px;
-    }
-
-    .circle-green,
-    .circle-blue,
-    .circle-pink {
         display: none;
     }
-
+    
     .dynamic-music-label {
-        right: 110px;
-        bottom: 40px;
+        display: none;
     }
-
-    .yoga-section {
-        align-items: baseline;
-        min-height: 145vh;
-
+    
+    .career-goals-section {
+        padding: 0 20px;
     }
-
+    
+    .decorative-elements {
+        display: none;
+    }
+    .yoga-section{
+        height: auto;
+        padding: 60px 15px;
+    }
     .yoga-content {
         flex-direction: column;
-        gap: 50px;
-
+        gap: 40px;
     }
-
+    
+    .image-container {
+        display:none
+    }
+    
     .yoga-image {
-        margin-top: 250px;
-        width: 90%;
         height: 300px;
-        position: absolute;
-        overflow: visible;
     }
-
+    
+    .video-overlay {
+        bottom: 15px;
+        right: 15px;
+        padding: 12px 16px;
+    }
+    .goal-section {
+    height: auto;
+    padding: 60px 40px;
+}
     .goal-content-wrapper {
         flex-direction: column;
         gap: 40px;
     }
-
+    
     .goal-content.one {
         margin-bottom: 0;
     }
-
+    
     .goal-content.two {
         margin-top: 0;
     }
-
-    .money-move-section{
-        padding-top: 90px;
-        height: 120vh;
-    }
-    .circular-logo {
-    top: 90px;
-    right: 100px;
-    justify-content: baseline;
     
-}
-    .money-visual {
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100px;
-    bottom: 100px;
-}
+    .video-courses-section {
+        padding: 80px 20px;
+    }
+    
+    .product-images {
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    
+    .product-images img {
+        width: calc(50.333% - 14px);
+        height: 200px;
+    }
+    
+    .money-move-section {
+        padding: 50px 20px;
+    }
+    
     .money-content-wrapper {
         flex-direction: column;
-        gap: 40px;
+        gap: 10px;
     }
-
+    
     .stats-container {
+        flex-direction: column;
         gap: 20px;
     }
-
+    .money-visual {
+        flex-direction: column;
+    }
+    .circular-logo {
+        top: 50px;
+        right: 80px;
+    }
+    
     .credit-card {
         position: relative;
         top: 0;
         right: 0;
-        margin: 20px auto 0;
+        width: 100%;
+        max-width: 280px;
+        margin: 20px auto;
     }
-
+    
+    .testimonials-section {
+        padding: 0 20px;
+    }
+    
+    .testimonials-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
     .testimonials-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .testimonial-card {
+        padding: 30px 20px;
+    }
+    
+    .footer-section {
+        padding: 50px 20px 20px 20px;
+    }
+    
+    .footer-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-links {
         flex-direction: column;
         gap: 30px;
     }
 
-    .testimonials-header {
-        flex-direction: column;
+    .container{
+        padding: 50px 20px;
+    }
+    
+    .content-wrapper {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .image-section {
+        height: 400px;
+        padding: 30px 20px;
+    }
+    
+    .cta-text {
+        font-size: 1.8rem;
+    }
+    
+    .whatsapp-button {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+/* Large Mobile Devices (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .header-container {
+        padding: 0px 30px;
+    }
+    
+    .logo-icon img {
+        width: 120px;
+        height: 70px;
+    }
+    
+    .navigation-menu {
         gap: 20px;
     }
-
+    
+    .hero-section {
+        padding: 0 30px;
+        padding-top: 90px;
+    }
+    
+    .qr-code-container {
+        width: 120px;
+        height: 120px;
+        right: 30px;
+        bottom: 30px;
+    }
+    
+    .qr-code-pattern {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .career-goals-section {
+        padding: 0 30px;
+    }
+    
+    .yoga-content {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .yoga-image {
+        height: 400px;
+    }
+    
+    .goal-content-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .goal-content.one {
+        margin-bottom: 50px;
+    }
+    
+    .goal-content.two {
+        margin-top: 50px;
+    }
+    
+    .video-courses-section {
+        padding: 100px 30px;
+    }
+    
+    .product-images img {
+        width: calc(50% - 10px);
+        height: 280px;
+    }
+    
+    .money-move-section {
+        padding: 50px 30px;
+    }
+    
+    .money-content-wrapper {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .stats-container {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .testimonials-section {
+        padding: 0 30px;
+    }
+    
+    .testimonials-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .footer-section {
+        padding: 50px 30px 20px 30px;
+    }
+    
     .footer-content {
         flex-direction: column;
         gap: 40px;
     }
-    .footer-section{
-        width: 100%;
-    }
+    
     .footer-links {
-        gap: 80px;
+        flex-direction: row;
+        gap: 50px;
+        flex-wrap: wrap;
     }
-
-    .container {
-        padding: 50px 20px;
-    }
-
+    
     .content-wrapper {
         grid-template-columns: 1fr;
-        gap: 40px;
-
+        gap: 50px;
     }
-
-    .product-images img {
-        width: calc(50% - 10px);
-    }
-
-}
-
-/* Extra Small Mobile (up to 375px) */
-@media (max-width: 375px) {
-    .header-container {
-        padding: 0 8px;
-    }
-
-    .logo-icon img {
-        width: 80px;
-        height: 50px;
-    }
-
-    .logo-text {
-        font-size: 14px;
-    }
-
-    .hero-section,
-    .career-goals-section,
-    .yoga-section,
-    .goal-section,
-    .video-courses-section,
-    .money-move-section,
-    .testimonials-section {
-        padding-left: 8px;
-        padding-right: 8px;
-    }
-
-    .primary-cta-button {
-        padding: 10px 20px;
-        font-size: 13px;
-    }
-
-    .yoga-image {
-        height: 200px;
-    }
-
-    .feature-content h3 {
-        font-size: 18px;
-    }
-
-    .crossed-circle {
-        width: 150px;
-        height: 150px;
-    }
-
-    .money-title {
-        font-size: 24px;
-    }
-
-    .circular-logo {
-        width: 120px;
-        height: 120px;
-        font-size: 36px;
-    }
-
-    .credit-card {
-        width: 180px;
-        height: 110px;
-        padding: 10px;
-    }
-
-    .testimonial-card {
-        padding: 15px;
-    }
-
-    .product-images img {
-        height: 180px;
-    }
-
+    
     .image-section {
-        height: 250px;
-        padding: 15px;
-    }
-
-    .cta-text {
-        font-size: 1.2rem;
-    }
-
-    .whatsapp-button {
-        width: 50px;
-        height: 50px;
+        height: 450px;
+        padding: 35px 25px;
     }
 }
 
-/* Landscape Orientation for Mobile Devices */
-@media (max-height: 500px) and (orientation: landscape) {
-    .full-height-section {
-        height: auto;
-        min-height: 100vh;
-        padding: 40px 0;
+/* Tablet Devices (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .header-container {
+        padding: 0px 35px;
     }
-
+    
+    .navigation-menu {
+        gap: 25px;
+    }
+    
     .hero-section {
-        padding-top: 100px;
-        padding-bottom: 40px;
+        padding: 0 35px;
+        padding-top: 85px;
     }
-
-    .qr-code-container {
-        display: none;
+    
+    .career-goals-section {
+        padding: 0 35px;
     }
-
-    .dynamic-music-label {
-        display: none;
-    }
-
+    
     .yoga-content {
-        flex-direction: row;
+        gap: 60px;
     }
-
+    
     .yoga-image {
-        height: 300px;
+        height: 500px;
     }
-
+    
     .goal-content-wrapper {
-        flex-direction: row;
+        gap: 60px;
     }
-
-    .money-content-wrapper {
-        flex-direction: row;
+    
+    .goal-content.one {
+        margin-bottom: 150px;
     }
-}
-
-/* Portrait Orientation for Tablets */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
-    .yoga-content {
-        flex-direction: column;
+    
+    .goal-content.two {
+        margin-top: 100px;
     }
-
-    .goal-content-wrapper {
-        flex-direction: column;
+    
+    .video-courses-section {
+        padding: 120px 35px;
     }
-
-    .money-content-wrapper {
-        flex-direction: column;
-    }
-
-    .testimonials-grid {
-        flex-direction: column;
-    }
-
+    
     .product-images img {
         width: calc(50% - 10px);
+        height: 290px;
+    }
+    
+    .money-move-section {
+        padding: 50px 35px;
+    }
+    
+    .money-content-wrapper {
+        gap: 60px;
+    }
+    
+    .credit-card {
+        width: 250px;
+        height: 156px;
+        top: 50px;
+        right: 30px;
+    }
+    
+    .testimonials-section {
+        padding: 0 35px;
+    }
+    
+    .testimonials-grid {
+        gap: 30px;
+    }
+    
+    .footer-section {
+        padding: 50px 35px 20px 35px;
+    }
+    
+    .footer-links {
+        gap: 60px;
+    }
+    
+    .content-wrapper {
+        gap: 50px;
+    }
+    
+    .image-section {
+        height: 480px;
     }
 }
 
-/* Landscape Orientation for Tablets */
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+/* Large Tablet/Small Desktop (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
     .yoga-content {
-        flex-direction: row;
-        gap: 30px;
+        gap: 70px;
     }
-
+    
     .goal-content-wrapper {
-        flex-direction: row;
-        gap: 30px;
+        gap: 70px;
     }
-
-    .money-content-wrapper {
-        flex-direction: row;
-        gap: 30px;
+    
+    .goal-content.one {
+        margin-bottom: 200px;
     }
-
-    .testimonials-grid {
-        flex-direction: row;
+    
+    .goal-content.two {
+        margin-top: 150px;
     }
-
+    
     .product-images img {
         width: calc(33.333% - 14px);
+        height: 290px;
+    }
+    
+    .money-content-wrapper {
+        gap: 70px;
+    }
+    
+    .testimonials-grid {
+        gap: 35px;
+    }
+    
+    .footer-links {
+        gap: 70px;
     }
 }
 
-/* High DPI Displays */
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-
-    .logo-icon img,
-    .qr-code-pattern,
-    .yoga-image {
-        image-rendering: -webkit-optimize-contrast;
-        image-rendering: crisp-edges;
+/* Large Desktop (1201px and above) */
+@media (min-width: 1201px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .hero-content {
+        max-width: 1400px;
+    }
+    
+    .career-goals-content {
+        max-width: 1400px;
+    }
+    
+    .yoga-content {
+        max-width: 1400px;
+    }
+    
+    .goal-content-wrapper {
+        max-width: 1400px;
+    }
+    
+    .courses-content {
+        max-width: 1400px;
+    }
+    
+    .money-content-wrapper {
+        max-width: 1400px;
+    }
+    
+    .testimonials-content {
+        max-width: 1400px;
+    }
+    
+    .footer-content-wrapper {
+        max-width: 1400px;
     }
 }
 
-/* Print Styles */
-@media print {
-
-    .header-container,
-    .qr-code-container,
-    .dynamic-music-label,
-    .whatsapp-button,
-    .mobile-menu-toggle {
-        display: none !important;
-    }
-
-    .full-height-section {
-        height: auto !important;
-        page-break-inside: avoid;
-    }
-
-    .hero-section {
-        padding-top: 20px !important;
-    }
-
-    * {
-        color: black !important;
-        background: white !important;
-    }
+/* Additional Mobile Menu JavaScript Toggle Class */
+.mobile-menu-toggle.active .mobile-menu-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
 }
 
-/* Reduced Motion Preferences */
-@media (prefers-reduced-motion: reduce) {
-    .whatsapp-button {
-        animation: none;
-    }
-
-    .play-button:hover,
-    .cta-button:hover,
-    .product-images img:hover {
-        transform: none;
-    }
-
-    * {
-        transition: none !important;
-        animation: none !important;
-    }
+.mobile-menu-toggle.active .mobile-menu-bar:nth-child(2) {
+    opacity: 0;
 }
 
-/* Dark Mode Support 
-@media (prefers-color-scheme: dark) {
-    .career-goals-section,
-    .goal-section {
-        background: #1f2937;
-        color: white;
-    }
-    
-    .testimonials-section {
-        background: #111827;
-        color: white;
-    }
-    
-    .testimonial-card {
-        background: #374151;
-        color: white;
-    }
-    
-    .faq-item {
-        background: #374151;
-        color: white;
-    }
-    
-    .credit-card {
-        background: #374151;
-        color: white;
-    }
-    
-}*/
+.mobile-menu-toggle.active .mobile-menu-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+/* Smooth transitions for better UX */
+.navigation-menu,
+.mobile-menu-bar,
+.testimonial-card,
+.product-images img,
+.cta-button,
+.play-button {
+    transition: all 0.3s ease;
+}
