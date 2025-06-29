@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eco Creation</title>
-    <link rel="icon" type="image/png" href="assests/logo.png">
+    <title>Eco Creational</title>
     <link rel="stylesheet" href="styles.css">
-
+    <link rel="icon" type="image/png" href="assests/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 </head>
 
@@ -22,10 +22,11 @@
         </div>
         <nav>
             <ul class="navigation-menu" id="navigationMenu">
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Services</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#goal" class="nav-link">Goal</a></li>
+                <li><a href="#service" class="nav-link">Service</a></li>
+                <li><a href="#question" class="nav-link">Q&A</a></li>
             </ul>
         </nav>
         <div class="mobile-menu-toggle" onclick="toggleMobileMenu()">
@@ -33,11 +34,11 @@
             <div class="mobile-menu-bar"></div>
             <div class="mobile-menu-bar"></div>
         </div>
-        
+
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section full-height-section">
+    <section class="hero-section full-height-section" id="home">
         <div class="hero-content">
             <h1 class="hero-title">Carry. Care. Sustain.</h1>
             <p class="hero-description">
@@ -51,7 +52,7 @@
                     <span>4.8</span>
                 </div>
             </div>
-            
+
         </div>
 
 
@@ -82,7 +83,7 @@
     </section>
 
     <!-- Open Your Eyes Section -->
-    <section class="yoga-section">
+    <section class="yoga-section" id="about">
         <div class="yoga-content">
             <div class="content-container">
                 <h2 class="section-title">Your Life For a Greener, Cleaner Tomorrow</h2>
@@ -127,10 +128,13 @@
                 <div class="yoga-image">
                     <div class="video-overlay">
                         <div>
-                            <div class="video-text">View Patient Stories</div>
+                            <div class="video-text">Real Eco Bag Reviews</div>
                             <div class="waveform"></div>
                         </div>
-                        <div class="play-button">▶</div>
+                        <div class="play-button"
+                            onclick="document.getElementById('testimonial').scrollIntoView({ behavior: 'smooth' });">▶
+                        </div>
+
                     </div>
                 </div>
             </div>
@@ -138,7 +142,7 @@
     </section>
 
     <!-- The Goal Section -->
-    <section class="goal-section full-height-section">
+    <section class="goal-section full-height-section" id="goal">
         <div class="goal-content-wrapper">
             <div class="goal-content one">
                 <h2 class="goal-title">The</h2>
@@ -169,7 +173,7 @@
     </section>
 
     <!-- Video Courses Section -->
-    <section class="video-courses-section full-height-section">
+    <section class="video-courses-section full-height-section" id="service">
         <div class="courses-content">
             <h2 class="courses-title">Choose from <span class="purple-number">100+ </span>eco-inspired bag
                 designs, ideas, and creations to help shape a greener future.</h2>
@@ -181,24 +185,24 @@
             </p>
             <div class="products">
                 <div class="product-images">
-                    <img src="assests/image_01.jpg" alt="">
-                    <img src="assests/image_02.jpg" alt="">
-                    <img src="assests/image_03.jpg" alt="">
-                    <img src="assests/image_04.jpg" alt="">
-                    <img src="assests/image_05.jpg" alt="">
-                    <img src="assests/image_06.jpg" alt="">
+                    <img src="assests/image_01.webp" alt="">
+                    <img src="assests/image_02.webp" alt="">
+                    <img src="assests/image_03.webp" alt="">
+                    <img src="assests/image_04.webp" alt="">
+                    <img src="assests/image_05.webp" alt="">
+                    <img src="assests/image_06.webp" alt="">
                 </div>
             </div>
         </div>
     </section>
 
-    <div class="container">
+    <div class="container" id="question">
         <h1 class="section-title">Common Questions</h1>
 
         <div class="content-wrapper">
             <div class="image-section">
                 <div class="cta-text">Need any help? Don't hesitate to join us.</div>
-                <a href="#" class="cta-button">
+                <a href="https://www.facebook.com/share/1ZBHp2oGmy/?mibextid=wwXIfr" class="cta-button">
                     Get In touch
                     <div class="arrow-icon">→</div>
                 </a>
@@ -267,29 +271,34 @@
                 <div class="stats-container">
                     <div class="stat-item">
                         <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                                <line x1="1" y1="10" x2="23" y2="10" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M6 2l1.5 4h9L18 2" />
+                                <path d="M3 6h18l-1.5 14H4.5L3 6z" />
+                                <path d="M9 10v4" />
+                                <path d="M15 10v4" />
                             </svg>
+
                         </div>
                         <div class="stat-info">
-                            <div class="stat-value">7.5 m+</div>
-                            <div class="stat-label">Daily Transactions</div>
+                            <div class="stat-value">5000+</div>
+                            <div class="stat-label">Custom Eco Bags Created</div>
                         </div>
                     </div>
 
                     <div class="stat-item">
                         <div class="stat-icon">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="2">
-                                <line x1="12" y1="1" x2="12" y2="23" />
-                                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z" />
                             </svg>
                         </div>
                         <div class="stat-info">
-                            <div class="stat-value">+2%</div>
-                            <div class="stat-label">Unlimited Daily Cashback</div>
+                            <div class="stat-value">+95%</div>
+                            <div class="stat-label">Plastic-Free Satisfaction Rate</div>
                         </div>
                     </div>
                 </div>
@@ -367,34 +376,35 @@
     </section>
 
     <!-- Testimonials Section -->
-    <section class="testimonials-section full-height-section">
+    <section class="testimonials-section full-height-section" id="testimonial">
         <div class="testimonials-content">
             <div class="testimonials-header">
-                <h2 class="testimonials-title">Trusted By Over Our<br>400k Accounts</h2>
+                <h2 class="testimonials-title">Trusted by Our<br>Eco-Friendly Community</h2>
+
+
                 <div class="testimonials-rating">
                     <span>4.8</span>
                     <span class="star-rating">★★★★★</span>
-                    <span>Trustpilot</span>
+                    <span>EcoCreation</span>
                 </div>
             </div>
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="quote-mark">"</div>
                     <p class="testimonial-text">
-                        Awesome card and app! I am very impressed with
-                        Suits so far. It was very fast funds deposited at once
-                        and it's cheaper than Western Union!
+                        It is our pleasure to partner with the University of Peradeniya, Geography Department, and
+                        provide these eco-friendly tote bags as a token of appreciation for their “Tea and Talk”
+                        farewell party.
                     </p>
-                    <div class="testimonial-author">— Dan Wright</div>
+                    <div class="testimonial-author">— University of Peradeniya</div>
                 </div>
                 <div class="testimonial-card">
                     <div class="quote-mark">"</div>
                     <p class="testimonial-text">
-                        Awesome card and app! I am very impressed with
-                        Suits so far. It was very fast funds deposited at once
-                        and it's cheaper than Western Union!
+                        It is our pleasure to partner with CIPM Sri Lanka and provide these eco-friendly tote bags,
+                        books, and pencils as a token of appreciation for their special event.
                     </p>
-                    <div class="testimonial-author">— Dan Wright</div>
+                    <div class="testimonial-author">— CIPM Sri Lanka</div>
                 </div>
             </div>
         </div>
@@ -410,11 +420,11 @@
                 </div>
                 <div class="footer-links">
                     <div class="footer-column">
-                        <div class="footer-column-title">Company</div>
-                        <a href="#" class="footer-link">About</a>
-                        <a href="#" class="footer-link">Careers</a>
-                        <a href="#" class="footer-link">Press</a>
-                        <a href="#" class="footer-link">Blog</a>
+                        <div class="footer-column-title">Brand</div>
+                        <a href="#about" class="footer-link">About</a>
+                        <a href="#goal" class="footer-link">Goal</a>
+                        <a href="#service" class="footer-link">Service</a>
+                        <a href="#question" class="footer-link">Q&A</a>
                     </div>
                     <div class="footer-column">
                         <div class="footer-column-title">Follow us</div>
@@ -436,8 +446,11 @@
             </div>
         </div>
     </footer>
-    <div class="whatsapp-button"  onclick="window.open('https://wa.me/94777222773', '_blank')">
-        
+    <div class="whatsapp-button" onclick="window.open('https://wa.me/94777222773', '_blank')">
+
+    </div>
+    <div class="up" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
     </div>
 
     <script>
@@ -493,6 +506,10 @@
                 faqItem.classList.add('active');
                 faqItem.querySelector('.faq-icon').textContent = '+';
             }
+        }
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
         }
     </script>
 
